@@ -61,25 +61,36 @@ function validateInputs(nombre, email, nombreEmpresa, numeroEmpleados, mensaje){
     // }
     return validationStatus;
 };
+let request;
 
 formulario.on("submit", function(e){
     e.preventDefault();
     let validationStatus = validateInputs(nombre, email, nombreEmpresa, numeroEmpleados, mensaje);
     if(validationStatus){
-        $.ajax({
+        var $inputs = $(this).find('input, button, textarea');
+        request = $.ajax({
             url: "./php/contacto.php",
             method: 'POST',
-            dataType: 'json',
+            async: false,
             data: $(this).serialize(),
-            always: function(){
-                $(nombre).atrr("disabled", true);
-            },
             success: function(response){
                 $('#alert-success').removeClass('hidden');
                 $('#alert-success').addClass('block').html('<i class="fas fa-check-circle"></i>'+
                     ' Formulario enviado, pronto nos pondremos en contacto.');
-                    formulario.find('input[type=text], input[type=tel], textarea, select, input[type=email]').val('');
+                    formulario.find('input[type=text], input[type=tel], textarea, input[type=email]').val('');
+            },
+            error: function(jqXHR, textStatus, errorThrown){
+                console.error('The following error occured: '+textStatus, errorThrown);
+                console.log(jqXHR.status);
             }
+        });
+
+        
+        
+        
+        request.always(function () {
+            $inputs.prop('disabled', false);
+            console.log("enviando")
         });
     }
 })

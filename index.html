@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c27286bd6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Khero</title>
+</head>
+<body>
+    <div id="app" class="w-screen h-screen flex justify-between flex-col">
+        <div class="w-full fixed bottom-5 left-1/2 transform -translate-x-1/2 text-center visible md:invisible z-40">
+            <a target="_blank" href="wa.link/ufg33p" class="border border-primary text-primary bg-secondary font-bold tracking-wide px-5 py-3 text-lg w-auto leading-none rounded-full"><i class="fab fa-whatsapp"></i> Atención a Héroes</a>
+        </div>
+        <nav>
+            <div class="navbar w-full px-6 flex justify-between flex-row items-center fixed top-0 left-0 bg-secondary py-4 z-40  md:bg-transparent md:py-0 md:px-0">
+                <img class="logo w-36 md:w-48 md:ml-12 h-auto object-contain" src="./images/logo.png" alt="">
+                <a target="_blank" href="wa.link/ufg33p" class="border border-white text-white font-bold tracking-wide px-3 py-1 leading-none rounded-full hover:text-secondary hover:bg-primary hover:ring-2 hover:ring-primary hover:ring-opacity-25 invisible md:visible"><i class="fab fa-whatsapp"></i> Atención a Héroes</a>
+                <button id="menu-button" class="text-primary focus:ring focus:ring-primary md:text-secondary md:bg-primary md:h-28 md:w-44">
+                    <i class="fas fa-bars"></i> MENU
+                </button>
+            </div>
+            <div id="wide-menu" class="h-screen w-screen bg-cover bg-center fixed top-0 left-0 z-50 invisible" style="background-image: url(./images/banner-como-funciona-bg.jpg);">
+                <div class="flex justify-center items-center flex-col h-full w-full">
+                    <img class="w-36 h-auto object-contain my-8" src="./images/logo.png" alt="">
+                    <ul class="nav-menu mb-8">
+                        <li>
+                            <a class="nav-link hover:text-primary " href="#como-funciona">
+                                como funciona <br> <span>Un app que te vuelve héroe. </span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link hover:text-primary" href="#mision">
+                                crea tu misión <br> <span>Buscas actividades divertidas. </span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link hover:text-primary" href="#pasos">
+                                4 simples pasos <br> <span>Se una empresa que marque la diferencia. </span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link hover:text-primary" href="#participar">
+                                ¿Por que participar? </a>
+                        </li>
+                        <li>
+                            <a class="nav-link hover:text-primary" href="#contactanos">
+                                Contácto </a>
+                        </li>
+                    </ul>
+                    <a id="close-menu" href="#" class="btn-rounded btn-outline-primary"><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="inicio">
+                <div id="banner-hero" >
+                    <div class="h-auto w-screen bg-cover bg-left-top flex flex-col md:flex-row-reverse md:items-center justify-start pt-14 md:pt-0" style="background-image: url(./images/banner-hero.jpg);">
+                        <img class="w-3/4 md:w-1/2 mx-auto" src="./images/banner-home-image.png" alt="">
+                        <div class="w-full px-6 mb-8 mt-2 md:w-1/2 md:px-16">
+                            <div class="line-title flex items-center justify-start">
+                                <div class="line w-12 h-0.5 bg-white flex-shrink-0"></div>
+                                <div class="title uppercase text-white font-bold ml-4 text-lg">despierta tu héroe</div>
+                            </div>
+                            <p class="font-extrabold text-3xl text-primary">Runfunding es 
+                                transformar km <br>
+                                <span class="font-extralight">recorridos en impacto social</span></p>
+                                <p class="font-light text-white text-xl leading-none mt-3 mb-2">Para la comunidad y las empresas</p>
+                                <a target="_blank" href="http://onelink.to/fvq8xs" class="btn btn-primary">Descargar khero <span><i class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="como-funciona">
+                <div id="banner-como-funciona">
+                    <div class="h-auto w-screen bg-cover bg-left-top flex flex-col md:flex-row md:items-center justify-start pt-4" style="background-image: url(./images/banner-como-funciona-bg.jpg);">
+                        <img class="w-3/4 md:w-1/2 mx-auto" src="./images/banner-como-funciona-image.png" alt="">
+                        <div class="w-full md:w-1/2 px-6 mb-8 mt-2">
+                            <div class="line-title flex items-center justify-start">
+                                <div class="line w-12 h-0.5 bg-white flex-shrink-0"></div>
+                                <div class="title uppercase text-white font-bold ml-4 text-lg">¿Cómo funciona?</div>
+                            </div>
+                            <p class="font-extrabold text-3xl text-primary mb-3">Descarga Khero <br>
+                                <span class="font-extralight">en tu celular</span></p>
+                            <p class="text-white mb-8">Crea una cuenta sin costo. Somos más de 10,000 personas que al caminar o correr impactamos a la comunidad.</p>
+                                <a href="#mision" class="btn-rounded btn-outline-white"><i class="fas fa-chevron-down    "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="mision" class="mt-12">
+                <div class="container px-6 flex flex-col md:flex-row items-center md:mx-auto">
+                    <div class="w-full md:w-1/2">
+                        <p class="text-primary uppercase text-2xl font-semibold">LA MISIÓN</p>
+                        <p class="text-secondary font-extrabold leading-none tracking-tight uppercase text-3xl">
+                        Elige una <br>
+                        fundación  <br>
+                        <span class="font-light tracking-wide">o causa</span></p>
+                        <p class="mt-6">
+                            La que más te mueva o te apasione. Tienen sus reglas de actividad mínima para lograr el cometido. 
+                        </p>
+                    </div>
+                    <div class="w-full mt-8 md:w-1/2 md:mx-auto">
+                        <img class="w-full mx-auto" src="./images/mision-image.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="activate" class="mt-12">
+                <div class="container px-6 flex flex-col md:flex-row-reverse md:mx-auto items-center">
+                    <div class="w-full">
+                        <p class="text-primary uppercase text-2xl font-semibold">ACTÍVATE</p>
+                        <p class="text-secondary font-extrabold leading-none tracking-tight uppercase text-3xl">
+                            Haz Runfunding<br>
+                        <span class="font-light tracking-wide">paso a paso</span></p>
+                        <p class="mt-6">
+                            Entra a la app y cada vez que salgas a recorrer una más de un 1 km. Cuando te mueves no solo te estas ejercitando, también estas despertando al héroe que llevas dentro.
+                        </p>
+                    </div>
+                    <div class="w-full mt-8">
+                        <img class="w-full mx-auto" src="./images/activate-image.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="heroe-tennis">
+                <div class="h-auto w-full bg-cover bg-left-center flex flex-col md:flex-row md:py-16 justify-end pt-16 md:items-center" style="background-image: url(./images/heroe-tennis.jpg);">
+                    <div class="px-6 w-full mb-5 md:w-1/2 md:mb-0">
+                        <h3 class="text-4xl text-primary font-extrabold mb-5 uppercase text-shadow">Se un héroe <br> con tenis</h3>
+                        <p class="text-white font-light">Por cada kilómetro registrado estarás ayudando a ganar dinero de nuestros patrocinadores  para la fundación que elegiste. </p>
+                    </div>
+                </div>
+            </section>
+            <section id="actividades-equipo">
+                <div id="banner-actividades" class="mt-14 md:mt-0">
+                    <div class="h-auto w-screen bg-cover bg-left-top flex flex-col md:flex-row-reverse md:items-center justify-start pt-4 md:pt-0" style="background-image: url(./images/crea-mision-bg.jpg);">
+                        <img class="w-full md:w-1/2 mx-auto" src="./images/crea-mision-image.png" alt="">
+                        <div class="w-full md:w-1/2 px-6 mb-8 mt-5">
+                            <div class="line-title flex items-center justify-start">
+                                <div class="line w-12 h-0.5 bg-primary flex-shrink-0"></div>
+                                <div class="title uppercase text-primary font-bold ml-4 text-lg">ACTIVIDADES EN EQUIPO</div>
+                            </div>
+                            <p class="font-extrabold text-3xl text-secondary leading-none">Crea tu misión o <br>
+                                <span class="font-extralight">proyecto virtual</span></p>
+                                <p class="font-light text-xl leading-none mt-4 mb-2">Buscas actividades divertidas, rentables y de impacto social para tus empleados. Nuestro programa de Khero misión es idónea para tu empresa.  </p>
+                                <a href="#pasos" class="btn-rounded btn-outline-primary"><i class="fas fa-chevron-down    "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="equipo-khero">
+                <div class="bg-lightblue py-12 w-full">
+                    <div class="line-title flex items-center justify-start md:justify-center">
+                        <div class="line w-12 h-0.5 bg-white flex-shrink-0"></div>
+                        <div class="title uppercase text-white font-bold ml-4 text-lg">ellos han sido parte del equipo de khero</div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center items-baseline md:items-center mt-5 mb-8 md:py-6 md:bg-white md:container md:mx-auto md:-mt-8 md:shadow-md">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-1.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-2.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-3.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-4.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-5.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-6.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-7.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-8.png" alt="">
+                    <img class="w-1/2 md:w-1/4 md:px-8 lg:px-16 px-3 mt-3 mx-auto" src="./images/logos/logo-9.png" alt="">
+                </div>
+            </section>
+            <section id="pasos">
+                <div class="w-full bg-cover bg-center pb-6 flex flex-col md:flex-row md:items-center" style="background-image: url(./images/paso-bg.jpg);">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-full" src="./images/paso-image.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2 px-6">
+                        <p class="text-primary font-semibold text-lg">4 SIMPLES PASO</p>
+                        <h3 class="text-white font-extrabold text-4xl">
+                            Se una empresa que <br> <span class="font-extralight">marque la diferencia</span>
+                        </h3>
+                        <p class="text-white font-light mt-6">
+                            Tus empleados descargan Khero de forma gratuita, crean una cuenta y eligen la misión. 
+                        </p>
+                        <div class="mt-8">
+                            <div class="flex justify-start items-center">
+                                <img class="flex-shrink-0 h-auto w-24 object-contain" src="./images/paso-1-img.png" alt="">
+                                <p class="text-lg text-white font-light leading-none">Se unen a su equipo privado con el correo electrónico empresarial. </p>
+                            </div>
+                            <div class="flex justify-start items-center">
+                                <img class="flex-shrink-0 h-auto w-24 object-contain" src="./images/paso-2-img.png" alt="">
+                                <p class="text-lg text-white font-light leading-none">Registraremos cuando salgas a recorrer  +1 km. </p>
+                            </div>
+                            <div class="flex justify-start items-center">
+                                <img class="flex-shrink-0 h-auto w-24 object-contain" src="./images/paso-3-img.png" alt="">
+                                <p class="text-lg text-white font-light leading-none">Cuando patrocines a tus empleados, cada km se convertirá en dinero para obras de caridad. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="participar">
+                <div class="bg-cover bg-center pt-14 pb-8 md:py-24" style="background-image: url(./images/participar/participa-bg.jpg);">
+                    <h2 class="text-4xl font-extrabold leading-none text-white text-center">¿POR QUÉ <br> PARTICIPAR?</h2>
+                    <div class="flex justify-between items-end flex-wrap">
+                        <div class="w-1/2 md:w-1/4 mt-8 text-center">
+                            <img class="w-24 h-24 object-contain mx-auto" src="./images/participar/fuerza.png" alt="">
+                            <p class="leading-none text-secondary mt-3">
+                                Fuerza laboral + <br>
+                                <span class="font-semibold">feliz y saludable</span>
+                            </p>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 mt-8 text-center">
+                            <img class="w-24 h-24 object-contain mx-auto" src="./images/participar/trabajo.png" alt="">
+                            <p class="leading-none text-secondary mt-3">
+                                Trabajo en<br>
+                                <span class="font-semibold">equipo</span>
+                            </p>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 mt-8 text-center">
+                            <img class="w-24 h-24 object-contain mx-auto" src="./images/participar/empleados.png" alt="">
+                            <p class="leading-none text-secondary mt-3">
+                                Empleados<br>
+                                <span class="font-semibold">orgullosos</span>
+                            </p>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 mt-8 text-center">
+                            <img class="w-24 h-24 object-contain mx-auto" src="./images/participar/salario.png" alt="">
+                            <p class="leading-none text-secondary mt-3">
+                                Salario<br>
+                                <span class="font-semibold">emocional</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section>
+                <div id="contactanos">
+                    <div class="bg-gray-100 px-2 py-8 mx-4 my-4 md:pl-16 md:pr-8 md:pb-16 md:mx-16 md:my-16">
+                        <div class="flex flex-col md:flex-row items-center flex-wrap">
+                            <div class="w-full md:w-1/2">
+                                <div class="line-title flex items-center justify-start">
+                                    <div class="line w-12 h-0.5 bg-primary flex-shrink-0"></div>
+                                    <div class="title uppercase text-primary font-bold ml-4 text-lg">contáctanos</div>
+                                </div>
+                                <h2 class="font-extrabold text-3xl text-secondary leading-none">¿Quieres saber <br>
+                                    <span class="font-extralight">más sobre Khero Empresarial?</span></h2>
+                                    <p class="font-light text-xl leading-none mt-4 mb-2">Sabemos lo importante que es invertir en desarrollar una cultura empresarial alrededor de una vida saludable y  con valor de servicio para la comunidad. Queremos saber más de lo que tienes en mente.  
+                                    </p>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <img class="w-full" src="./images/mascota-khero.png" alt="">
+                            </div>
+                        </div>
+                        <form action="javascript:void(0)" method="POST" id="contact-form" class="w-full">
+                            <div class="flex flex-col md:flex-row items-center flex-wrap">
+                                <div id="alert-success" class="w-full px-8 mx-8 mb-5 rounded-full text-center border-4 border-green-500 text-white text-lg uppercase bg-green-400 bg-opacity-75 hidden py-2"></div>
+                                <div class="w-full md:w-1/2 md:px-8">
+                                    <div class="form-group">
+                                        <input type="text" name="nombre" id="nombre" class="form-control focus:ring-primary focus:ring-opacity-40 focus:ring-4" placeholder="Nombre:*">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control focus:ring-primary focus:ring-opacity-40 focus:ring-4" placeholder="Email:*">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="nombre_empresa" id="nombre_empresa" class="form-control focus:ring-primary focus:ring-opacity-40 focus:ring-4" placeholder="Nombre de la empresa:">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" name="numero_empleados" id="numero_empleados" class="form-control focus:ring-primary focus:ring-opacity-40 focus:ring-4" placeholder="Número de empleados:">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-1/2 md:px-8">
+                                    <div class="form-group">
+                                        <textarea class="form-control focus:ring-primary focus:ring" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="w-full">
+                                        <button class="btn btn-primary">ENVIAR <span><i class="fas fa-chevron-right"></i></span></button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="flex justify-between items-center flex-col md:flex-row md:container md:mx-auto md:pb-12">
+                <p class="text-sm">Khero 2021 © Todos los derechos reservados </p>
+                <p class="text-sm">Términos y condiciones </p>
+                <p class="text-sm"><a href="/aviso-privacidad.html">Aviso de privacidad</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    
+</body>
+</html>
